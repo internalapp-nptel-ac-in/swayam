@@ -14,7 +14,10 @@ export default function Home() {
         <h1 className="font-sans text-[#073E6C] md:text-3xl xm:text-lg mt-5 text-center">
           Jan-Apr 2023 NPTEL Exams
         </h1>
-        <Link href="/login" className="mt-10 text-xl text-blue-600">
+        <Link
+          href="/login"
+          className="hover:underline mt-10 text-xl text-blue-600"
+        >
           {" "}
           👉 Click Here !!
         </Link>
