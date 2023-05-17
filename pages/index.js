@@ -6,6 +6,9 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div className="h-[100vh] bg-[#E2E7EC]">
+      <Head>
+        <title>NPTEL</title>
+      </Head>
       <section className="container w-[50%] mx-auto p-4 flex  flex-col items-center bg-white rounded-br-md rounded-bl-md min-h-[20vh] drop-shadow-lg">
         <Image src={logo} width={500} height={500} layout="responsive" />
         <h1 className="font-sans text-[#073E6C] text-3xl mt-5">
