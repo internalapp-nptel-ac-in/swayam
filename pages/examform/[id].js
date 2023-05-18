@@ -20,11 +20,11 @@ export default function () {
   }, []);
 
   return (
-    <div className="mx-auto mt-8 bg-white rounded-lg shadow-lg w-80 md:w-[80%]">
+    <div className=" mt-8 bg-white rounded-lg shadow-lg w-screen mx-10 md:w-[80%] md:mx-auto">
       <div className="font-serif bg-[#4E8399] flex justify-evenly items-center h-[10vh]">
         <Image src={logo} alt="Logo" className="w-[10%] h-[30%]" />
-        <h2 className="text-2xl md:text-3xl text-white text-center">
-          Exam Details Form for Jan - Apr 2023
+        <h2 className="text-2xl sm:text-lg md:text-3xl text-white text-center">
+          Exam Details Form for {info.table2 && info.table2.timeline}
         </h2>
         <button className="bg-[#D9534E] text-white p-2 rounded-sm">
           Logout
@@ -54,13 +54,13 @@ export default function () {
         </div>
         <div className="font-serif flex flex-col justify-center items-center">
           <h2 className="text-[#5C5D9A] font-bold text-center text-xl md:text-2xl">
-            March 2023 Exams
+            Exams
           </h2>
           <Link
             className="hover:underline text-red-600 text-center text-lg md:text-xl my-4 cursor-pointer"
             href={info.file ? info.file : ""}
           >
-            Click to view Results - Mar, 2023
+            Click to view Results
           </Link>
         </div>
         <table className="w-full">
